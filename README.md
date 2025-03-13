@@ -30,7 +30,7 @@ This DCGAN follows the best practices outlined in the referenced paper:
   - Leaky ReLU activation is used for non-linearity.
   - Final layer produces a single scalar output.
 
-![Generator Structure](https://github.com/samisafk/DCGAN/blob/main/writeup/generator.png)
+![Generator Structure](https://github.com/samisafk/DCGAN/blob/main/images/generator.png)
 
 ## Training Configuration
 
