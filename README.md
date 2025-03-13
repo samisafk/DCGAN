@@ -30,6 +30,8 @@ This DCGAN follows the best practices outlined in the referenced paper:
   - Leaky ReLU activation is used for non-linearity.
   - Final layer produces a single scalar output.
 
+![Generator Structure](https://github.com/samisafk/DCGAN/blob/main/writeup/generator.png)
+
 ## Training Configuration
 
 - **Dataset**: CelebA dataset, loaded using `torchvision.datasets.ImageFolder`
@@ -57,6 +59,8 @@ This DCGAN follows the best practices outlined in the referenced paper:
    - Update generator to produce more realistic images.
    - Use **Binary Cross Entropy loss** for both models.
 4. **Generate and save images** at the end of each epoch using PyTorch's `torchvision.utils.save_image` function.
+
+![Generated Image](images/generated_epoch_25.png)
 
 ## Dependencies
 
