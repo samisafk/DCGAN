@@ -14,31 +14,6 @@ Therefore there is a repackaged version as a simple folder of jpgs, containing a
 
 When reading the images, folder arrangement of this dataset should be carefully taken care of.
 
-## Files
-
-- [`dcgan_LSUN.py`](dcgan_LSUN.py) : This is the code for python implementation of [Unsupervised representation learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/pdf/1511.06434.pdf)
-- [`images`](images) : DCGAN generated bedrooms at every sample interval (5) when training the model for 100 epochs
-
-### Note
-
-The model hasn't been trained on all the epochs due to hardware constraints. So, the images folder will only contain 1 image from first epoch (trained for 1 epoch just for the sake of testing whether the code is working or not).
-
-I will be training the model and will update the repo soon.
-
-## Usage
-
-Clone the repository, change your present working directory to the cloned directory, Now create a now folder in this directory named `images` to save the generated images after every sampled interval and now train the model. Below commands accomplishes these steps.
-
-```
-$ git clone https://github.com/manideep2510/DCGAN_LSUN.git
-$ cd DCGAN_LSUN
-$ mkdir images
-$ python dcgan_LSUN.py
-```
-
-Download the dataset from [this link](https://www.kaggle.com/jhoward/lsun_bedroom/home).
-
-In the [`dcgan_LSUN.py`](dcgan_LSUN.py) code when we are reading the images into a numpy array, take care of the images path carefully. You will be required to change that part of code as your paths for the images would be diffirent than mine.
 
 ## Architecture
 
